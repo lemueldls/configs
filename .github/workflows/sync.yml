@@ -30,7 +30,7 @@ jobs:
       - name: Sync upstream
         run: |
           git remote add upstream git@github.com:caelestia-dots/caelestia.git
-          git pull upstream main
+          git pull upstream main --allow-unrelated-histories
           git add -A
           git commit -S -m "chore: sync upstream" || echo "No changes to commit"
           git push
