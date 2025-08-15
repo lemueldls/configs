@@ -1,1 +1,1 @@
-# configs
+# [configs](https://github.com/caelestia-dots/caelestia)
