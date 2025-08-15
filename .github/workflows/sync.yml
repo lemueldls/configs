@@ -26,13 +26,16 @@ jobs:
           git config --global user.signingKey ~/.ssh/id_ed25519
           git config --global user.name "Lemuel DLS"
           git config --global user.email "26912197+lemueldls@users.noreply.github.com"
-          git config --global pull.rebase false
-          git config --global pull.ff true
 
       - name: Sync upstream
         run: |
+          git config --global pull.rebase false
+          git config --global pull.ff true
           git remote add upstream git@github.com:caelestia-dots/caelestia.git
           git pull upstream main
+
+      - name: Add and commit changes
+        run: |
           git add -A
           git commit -S -m "chore: sync upstream" || echo "No changes to commit"
           git push
