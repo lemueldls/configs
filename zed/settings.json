@@ -7,19 +7,32 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Symbols Icon Theme",
+  "project_panel": { "dock": "right" },
+  "terminal": {
+    "shell": {
+      "program": "fish"
+    },
+    "font_family": "Iosevka Term",
+    "font_fallbacks": ["Noto Sans Mono CJK SC"]
+  },
+  "tab_size": 2,
+  "base_keymap": "VSCode",
   "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "buffer_font_size": 13,
+  "ui_font_family": "Iosevka Book",
+  "ui_font_fallbacks": ["Noto Color Emoji"],
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
+    "mode": "dark",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
   },
   "buffer_font_family": "Iosevka Term",
+  "buffer_font_fallbacks": ["Noto Color Emoji"],
   "multi_cursor_modifier": "cmd_or_ctrl",
   "languages": {
-    "Nix": {
-      "language_servers": ["nixd", "!nil"]
-    },
+    "Rust": { "tab_size": 4 },
+    "Nix": { "language_servers": ["nixd", "!nil"] },
     "QML": {
       "formatter": {
         "external": {
@@ -33,16 +46,16 @@
     }
   },
   "lsp": {
-    "nixd": {
-      "settings": {
-        "nixpkgs": {
-          "expr": "import (builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs {}"
-        },
-        "formatting": {
-          "command": ["alejandra"]
-        }
-      }
-    },
+    // "nixd": {
+    //   "settings": {
+    //     "nixpkgs": {
+    //       "expr": "import (builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs {}"
+    //     },
+    //     "formatting": {
+    //       "command": ["alejandra"]
+    //     }
+    //   }
+    // },
     "qml": {
       "binary": {
         "arguments": ["-E"]
