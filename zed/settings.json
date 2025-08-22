@@ -29,7 +29,6 @@
   },
   "buffer_font_family": "Iosevka Term",
   "buffer_font_fallbacks": ["Noto Color Emoji"],
-  "multi_cursor_modifier": "cmd_or_ctrl",
   "languages": {
     "Rust": { "tab_size": 4 },
     "Nix": { "language_servers": ["nixd", "!nil"] },
