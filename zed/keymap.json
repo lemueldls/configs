@@ -9,15 +9,20 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-\\": "workspace::ToggleRightDock"
-      // "shift shift": "file_finder::Toggle"
+      "ctrl-\\": "workspace::ToggleRightDock",
+      "ctrl-alt-down": "terminal_panel::ToggleFocus"
     }
   },
   {
     "context": "Editor",
     "bindings": {
       "ctrl-\\": "workspace::ToggleRightDock"
-      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-alt-down": "workspace::ToggleZoom"
     }
   }
 ]
