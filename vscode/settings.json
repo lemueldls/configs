@@ -61,5 +61,7 @@
   "workbench.iconTheme": "flow-dark",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "lean4.alwaysAskBeforeInstallingLeanVersions": true
+  "lean4.alwaysAskBeforeInstallingLeanVersions": true,
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never"
 }
