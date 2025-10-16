@@ -58,10 +58,16 @@
   },
   "window.commandCenter": true,
   "workbench.colorTheme": "Caelestia",
-  "workbench.iconTheme": "flow-dark",
+  "workbench.iconTheme": "symbols",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "lean4.alwaysAskBeforeInstallingLeanVersions": true,
   "window.titleBarStyle": "native",
-  "window.customTitleBarVisibility": "never"
+  "window.customTitleBarVisibility": "never",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
